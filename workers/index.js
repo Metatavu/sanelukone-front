@@ -62,6 +62,8 @@
         host: host,
         port: port
       });
+
+      console.log("Worker connected");
     }
     
     _disconnectWorker (workerId) {
@@ -74,6 +76,8 @@
         port: worker.port,
         host: worker.host
       });
+
+      console.log("Worker disconnected");
     }
     
     _onClusterPing (event, data) {
